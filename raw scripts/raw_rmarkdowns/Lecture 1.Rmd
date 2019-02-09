@@ -1,0 +1,55 @@
+---
+title: "Introduction to R "
+author: "Christopher Maronga"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+header-includes:
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage{threeparttablex}
+- \usepackage[normalem]{ulem}
+- \usepackage{makecell}
+- \usepackage{xcolor}
+- \usepackage{longtable}
+output:
+   beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "default"
+    fonttheme: "default"
+    slide_level: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F,
+                      message = F,
+                      warning = F,
+                      comment = "")
+```
+
+## What is **R**?
+
+- Software environment for data analysis, statistical computing, and graphics
+- Statistical Programming language with a natural ease of use. Permits creating simple and complex functions/programs to execute various tasks
+
+Beyond the scope, there is a lot more things you can do with R.
+
+R originated from the statistical programming language S which was developed by John Chambers in the 1970’s
+
+The 1st ever R version was developed by Robert Gentlemen and Rose Ihaka at the university of Auckland in the 1990’s
+
+## Why should I learn **R**?
+```{r why R, out.width="100%",fig.align='center',out.height="80%"}
+library(knitr)
+include_graphics("images/why_R.png")
+```
+
+
+
+

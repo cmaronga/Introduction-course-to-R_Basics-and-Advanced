@@ -44,7 +44,7 @@ getwd() ## shows you the working directory as a "path"
 
 setwd("C:/WORK in PROGRESS/1.MASOMO BASE")
 
-setwd("C:\\WORK in PROGRESS\\1.MASOMO BASE")
+setwd("C://WORK in PROGRESS//1.MASOMO BASE")
 
 
 ## Reading data into R
@@ -60,7 +60,7 @@ diabetes2 <- read.table("C:/WORK in PROGRESS/GITHub_Projects/Introduction-course
 
 ## text file
 Iri_s<- read.table("C:/WORK in PROGRESS/GITHub_Projects/Introduction-course-to-R/datasets/iris.txt",
-                         sep = "\t", header = T)
+                         sep = "/t", header = T)
 
 data2 <- read.table("C:/WORK in PROGRESS/GITHub_Projects/Introduction-course-to-R/datasets/iris.txt",
                          sep = "", header = T)
@@ -75,13 +75,17 @@ diabets5 <- read.table("diabetes.csv", sep = ",", header = T)
 
 diabets6 <- read.table("datasets/diabetes.csv", sep = ",", header = T)
 
-iris56 <- read.table("datasets/iris.txt", sep="\t", header = T)
+iris56 <- read.table("datasets/iris.txt", sep="/t", header = T)
 
 
 ## Reading data using read.csv
 ?read.csv
 
 population <- read.csv("datasets/population.csv")
+
+
+phq_queries <- read.csv("C:/Users/cmaronga/Dropbox (Personal)/CHAIN Data Curation Group/CODE/Christopher/queries/phq_queries.csv")
+
 
 ### na.strings
 

@@ -1,0 +1,66 @@
+---
+title: "Introduction to R "
+author: "Christopher Maronga"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+header-includes:
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage{threeparttablex}
+- \usepackage[normalem]{ulem}
+- \usepackage{makecell}
+- \usepackage{xcolor}
+- \usepackage{longtable}
+output:
+   beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "default"
+    fonttheme: "default"
+    slide_level: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F,
+                      message = F,
+                      warning = F,
+                      comment = "")
+```
+
+## R Packages
+
+An R package is a collection of R functions and/or data with a well compiled code(s) that enable R users perform even more tasks with R(expand functionality).
+Examples of R packages include dplyr, ggplot2 etc. There are currently over 13,000 contributed packages in the Comprehensive R Archive Network(known as CRAN). [learn more](https://cran.r-project.org/web/packages/available_packages_by_name.html)
+
+**Common commands**
+
+- install.packages(“package name”)  # to install a package
+
+- library(package name) # load an R package into the workspace for use, also `require(package name)`
+
+Many more commands are available for dealing with packages
+
+
+## Managing data using R and Basic R procedures/commands
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

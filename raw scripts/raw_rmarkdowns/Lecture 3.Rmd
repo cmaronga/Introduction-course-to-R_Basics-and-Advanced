@@ -69,16 +69,26 @@ You can reference variables in any dataset in R using the following procedures:-
 - use of **`$`** operator (dollar sign)
 - use of **`with()`** function
 - use of **`attach()/detach()`** strategy
-- use of pipe operator **`%>%`** _we will dwell on this on later chapters_
+- use of pipe operator **`%>%`** _we will dwell on this on later lectures_
 
 
 Let demonstrate and explain the first three ways of easening our working with dataset variables in R using real examples
 
+## Basic R procedures for Managing data
+We will explore various ways of managing data in R as well putting the data into the right format in readiness for data analysis (creating other variables)
 
 
+- Selecting columns names
+- filtering
+- Transforming coloumns
+- Creating new coloumns
+- summarizing data
 
+**NOTE:** We will see how to implement the above in R as well as the **_tidyverse way_**.
+Our focus will be the tidyverse way using `dplyr` package.
 
-
+## Selecting and Filtering data
+We use the `[]` in all operations of filtering and selecting coloumns of a dataframe
 
 
 

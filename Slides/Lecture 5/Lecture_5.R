@@ -1,5 +1,6 @@
 ## Type conversion
 facebook_data <- read.csv("datasets/facebookData.csv")
+
 housing <- read.table("datasets/HousingData.txt",sep = "",header = T)
 
 str(facebook_data)

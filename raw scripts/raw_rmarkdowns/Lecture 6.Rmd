@@ -1,0 +1,57 @@
+---
+title: "Introduction to R - Data Management prt 3 "
+author: "Christopher Maronga"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+header-includes:
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage{threeparttablex}
+- \usepackage[normalem]{ulem}
+- \usepackage{makecell}
+- \usepackage{xcolor}
+- \usepackage{longtable}
+output:
+   beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "default"
+    fonttheme: "default"
+    slide_level: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F,
+                      message = F,
+                      warning = F,
+                      comment = "")
+```
+
+## Mutate/Transmute, Filter and Arrange
+
+- `mutate()` and `transmute()` is used to create new coloumns in R. This function can handle pretty almost everything within itself including vectors. Elements inside mutate can either be a new coloumn (based on values of other coloumns) by giving mutate a new name or replace an exixting coloumn.
+
+
+- `filter()` is used to exclude rows based on a condition from your dataset while `arrange()` as it sounds, is used to arrange your dataset either in ascending or descending order based on some chosen coloumn.
+
+
+- ` %>% ` reffered to as the *pipe operator* aids in making the code workflow easier to read and understand more especially when you are re-using an object at different stages. Helps avoiding of un-neccessary objects being created within the workspace.
+
+
+Lets look at examples in R
+
+
+
+
+
+
+
+
+
+

@@ -38,11 +38,13 @@ library(dplyr)
 
 data1 <- select(facebook_data, age, tenure, likes, gender)  ## named approach
 
+
 data2 <- select(facebook_data, age:likes)  # chunk
 
 ## deselect
 
 data3 <- select(facebook_data, -age, -tenure, -gender, -likes)
+
 data3b <- select(facebook_data, -c(age, tenure, gender, likes))
 
 data <- select(facebook_data, -c(age:likes))

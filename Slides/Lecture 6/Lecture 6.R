@@ -66,10 +66,12 @@ fine_data <- facebook %>%
   mutate(age_days = age *365) %>% 
   filter(gender == "female") 
 
+###
+facebook_arranged <- facebook %>% 
+  arrange(desc(age))
 
-
-
-
+facebook_grp <- facebook %>% 
+  group_by(age)
 
 
                 

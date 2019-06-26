@@ -33,63 +33,47 @@ knitr::opts_chunk$set(echo = F,
                       comment = "")
 ```
 
-## R Packages
+## Introduction
+By the end of this session, you will be able to do the following :-
 
-An R package is a collection of R functions and/or data with a well compiled code(s) that enable R users perform even more tasks with R(expand functionality).
-Examples of R packages include dplyr, ggplot2 etc. There are currently over 13,000 contributed packages in the Comprehensive R Archive Network(known as CRAN). [learn more](https://cran.r-project.org/web/packages/available_packages_by_name.html)
+- Understand types of R objects available
+- learn  to construct different types R objects
+- Work with objects by performing various operations on them
+- Understand objects metadata and how to list them in the command line
 
-**Common commands**
+You will get to learn various data structures/objects classification.
 
-- install.packages(“package name”)  # to install a package
+  - Homogeneous/heterogeneous (based on their contents)
+  - one dimension(1d), two dimensional(2d) and n dimensional (nd)
 
-- library(package name) # load an R package into the workspace for use, also `require(package name)`
+##  Types of R objects
+There are 5 **MAJOR** types of objects that you will encounter while working with R.
+They include :- 
 
-Many more commands are available for dealing with packages
+  - Vectors
+  - Matrices
+  - Arrays
+  - Lists (_special type of vectors_)
+  - Data frames
+  
+Note that **all** other types of R objects you will encounter in future are built and originate  from the above five types.
 
-
-## Managing data using R and Basic R procedures/commands
-
-The primary goal of any data collection exercise (i.e. finance or even health research) is to have a sound output dataset, and this can only be achieved via good data management practices.
-
-All data analyses rely 99.9% on data that has been well management for effective reporting.
-
-R is the perfect platform to perform all those tasks. It provides a wide range of packages to manage your data as well operate on it. Basic R commands you encounter in R includes:-
-
-- `str()/dim()`
-- `summary()/table()`
-- `nrow()/ncol()`
-
-**NOTE:** These are all base R functions, we will encounter most of them in practice along the course and explain the distinction between each of them and when to use them.
-
-
-## The Concept of global enviroment and variable refrencing
-
-You can reference variables in any dataset in R using the following procedures:-
-
-- use of **`$`** operator (dollar sign)
-- use of **`with()`** function
-- use of **`attach()/detach()`** strategy
-- use of pipe operator **`%>%`** _we will dwell on this on later lectures_
+This session will cover a hands - on introduction to these objects, how to create and work with them. Given an R object, use `str()` to determine what data structure/type it's composed of.
 
 
-Let demonstrate and explain the first three ways of easening our working with dataset variables in R using real examples
+## References
 
-## Basic R procedures for Managing data
-We will explore various ways of managing data in R as well putting the data into the right format in readiness for data analysis (creating other variables)
+- Official page: http://www.r-project.org
+- Download page: http://www.cran.r-project.org
 
+Some helpful websites:
 
-- Selecting columns names
-- filtering
-- Transforming coloumns
-- Creating new coloumns
-- summarizing data
+- http://www.statmethods.net
+- www.rseek.org
+- http://www.ats.ucla.edu/stat/r/
+- http://finzi.psych.upenn.edu/search.html
 
-**NOTE:** We will see how to implement the above in R as well as the **_tidyverse way_**.
-Our focus will be the tidyverse way using `dplyr` package.
-
-## Selecting and Filtering data
-We use the `[]` in all operations of filtering and selecting coloumns of a dataframe
-
+Looking for a command? Google it. The best way to learn R is through trial and error
 
 
 

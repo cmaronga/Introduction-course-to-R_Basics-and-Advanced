@@ -53,10 +53,44 @@ ggplot(msleep, aes(y = bodywt, x = sleep_total))+ geom_point()
 ggplot(housing_data, aes(x = age, y = mdev))+geom_point(col="blue")
 
 
+## Two variables: Discrete X, Continuous Y
+# box plot
+str(msleep)
+library(ggplot2)
+
+ggplot(msleep, aes(x= order, y = bodywt)) + geom_boxplot()
+
+ggplot(data2, aes(x= site, y= adm_weight))+geom_boxplot()
+
+ggplot(diabetes, aes(x=level_educat, y= bmi))+ geom_boxplot(fill="lightblue")
+
+# violin plot   # possible layers
+diabetes$level_educat <- c("Primary","Highschool","Campus","Other")
+diabetes$level_educat <- as.factor(diabetes$level_educat)
+
+ggplot(diabetes, aes(x=level_educat, y= bmi))+ geom_violin()
+
+# dotplot ## quasirandom plot geom_quasirandom()
+ggplot(diabetes, aes(x= level_educat, y= skin)) + geom_dotplot()
 
 
+## Two variables: Discrete X, Discrete Y
+# barplots (stacked and dodged)
+diabetes$gender <- c("Female","Male","Unknown")
+diabetes$gender <- as.factor(diabetes$gender)
 
+str(diabetes)
 
+## barplot 1
+ggplot(diabetes, aes(gender, fill = level_educat)) + geom_bar()  ## stacked barplot is the default
+
+## barplot2
+ggplot(diabetes, aes(level_educat, fill=gender))+geom_bar(position = "dodge")
+
+ggplot(data2, aes(site, fill= categ_enrol)) +geom_bar(position = "dodge")
+
+## three continous variables
+ggplot(sample_n(facebook_data,100), aes(age, dob_day,size = dob_year, colour = gender)) +geom_point()
 
 
 
